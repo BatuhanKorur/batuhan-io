@@ -28,3 +28,8 @@
 body {
   @apply bg-black text-foreground;
 }
+
+ul {
+  @apply list-inside;
+  @apply list-disc;
+}

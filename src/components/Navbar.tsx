@@ -4,9 +4,9 @@ import { HiOutlineMenuAlt3 } from 'react-icons/hi'
 
 const NavbarItem = ({ href, className, children }: INavbarItem) => {
   return (
-    <div className={`border-r h-full v-align px-8 v-click hover:bg-foreground/[1%] ${className}`}>
-      <Link href={href} className="text-[15px] font-[450] tracking-[0.1px] opacity-80">{children}</Link>
-    </div>
+    <Link href={href} className={`border-r h-full v-align v-click hover:bg-foreground/[1%] ${className}`}>
+      <p className="text-[15px] font-[450] tracking-[0.1px] px-8 opacity-80">{children}</p>
+    </Link>
   )
 }
 
