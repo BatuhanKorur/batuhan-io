@@ -1,0 +1,41 @@
+.donut {
+    animation: spin 60s linear infinite;
+}
+
+.donut svg {
+    @apply scale-[1] md:scale-[1.5] lg:scale-[1.7];
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        scale: calc(1);
+    }
+    50% {
+        transform: rotate(180deg);
+        scale: calc(1.25);
+    }
+    100% {
+        transform: rotate(360deg);
+        scale: calc(1);
+    }
+}
+
+.stop_1 {
+    stop-color: #4DE1FF;
+}
+
+.stop_2 {
+    stop-color: #2BA6FF;
+}
+
+.stop_3 {
+    stop-color: #3647FF;
+}
+
+.stop_4 {
+    stop-color: #8A36FF;
+}
+.stop_5 {
+    stop-color: #FF4D4D;
+}

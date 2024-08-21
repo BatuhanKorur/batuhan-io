@@ -1,0 +1,30 @@
+@tailwind base;
+@layer base {
+    :root {
+        --background: 230 20% 4%;
+        --foreground: 230 20% 97.5%;
+        --border: 230 5% 10%;
+    }
+    @font-face {
+        font-family: 'HelveticaNow';
+        font-style: normal;
+        font-weight: 200 800;
+        src: url('./fonts/HelveticaNow.woff2') format('woff2');
+    }
+    @font-face {
+        font-family: 'Jetbrains';
+        font-style: normal;
+        font-weight: 200 800;
+        src: url('./fonts/Jetbrains.woff2') format('woff2');
+    }
+}
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply font-sans antialiased border-border;
+}
+
+body {
+  @apply bg-black text-foreground;
+}
