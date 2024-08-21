@@ -1,3 +1,5 @@
+export { Button } from './Button'
 export { Donut } from './Donut'
-export { Navbar } from './Navbar'
 export { Footer } from './Footer'
+export { Heading } from './Heading'
+export { Navbar } from './Navbar'

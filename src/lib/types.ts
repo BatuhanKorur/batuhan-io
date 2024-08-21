@@ -10,3 +10,14 @@ export interface ISocialButton {
   link: string
   children: React.ReactNode
 }
+
+export interface IHeading {
+  children: React.ReactNode
+}
+
+export interface IPortfolioItem {
+  title: string
+  description: string
+  image: string
+  className?: string
+}

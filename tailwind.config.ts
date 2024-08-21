@@ -1,5 +1,5 @@
 import plugin from 'tailwindcss/plugin'
-import type {Config} from 'tailwindcss'
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
@@ -9,13 +9,14 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      sans: ['HelveticaNow', 'Helvetica', 'sans-serif',],
+      sans: ['HelveticaNow', 'Helvetica', 'sans-serif'],
       code: ['Jetbrains'],
     },
     fontSize: {
       sm: '0.85rem',
       base: '0.94rem',
       md: '1.1rem',
+      lg: '1.2rem',
     },
     extend: {
       colors: {
@@ -35,7 +36,7 @@ const config: Config = {
     },
   },
   plugins: [
-    plugin(function ({addUtilities}) {
+    plugin(function ({ addUtilities }) {
       addUtilities({
         '.v-align': {
           display: 'flex',
