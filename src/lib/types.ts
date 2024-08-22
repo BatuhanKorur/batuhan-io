@@ -1,9 +1,8 @@
 import React from 'react'
 
-export interface INavbarItem {
+export interface INavItem {
+  label: string
   href: string
-  className?: string
-  children: React.ReactNode
 }
 
 export interface ISocialButton {
@@ -17,7 +16,7 @@ export interface IHeading {
 
 export interface IPortfolioItem {
   title: string
-  description: string
-  image: string
-  className?: string
+  desc: string
+  img: string
+  link: string
 }

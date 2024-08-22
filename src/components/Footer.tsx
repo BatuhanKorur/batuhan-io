@@ -13,7 +13,7 @@ const SocialButton = ({ link, children }: ISocialButton) => {
 
 export function Footer() {
   return (
-    <div className="border-t h-[52px] v-between">
+    <div className="border-t h-[52px] v-between bg-transparent">
       <div></div>
       <div className="flex h-full divide-x border-l">
         <SocialButton link="https://github.com/BatuhanKorur"><RxGithubLogo size={18} /></SocialButton>

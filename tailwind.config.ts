@@ -32,6 +32,16 @@ const config: Config = {
         card: {
           DEFAULT: 'hsl(var(--card))',
         },
+        code: {
+          keyword: 'hsl(var(--code-keyword))',
+          string: 'hsl(var(--code-string))',
+          var: 'hsl(var(--code-var))',
+          comment: 'hsl(var(--code-comment))',
+          background: 'hsl(var(--code-background))',
+          gutter: 'hsl(var(--code-gutter))',
+          operator: 'hsl(var(--code-operator))',
+          property: 'hsl(var(--code-property))',
+        },
       },
     },
   },

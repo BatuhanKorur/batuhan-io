@@ -1,23 +1,34 @@
 @tailwind base;
 @layer base {
-    :root {
-        --background: 230 20% 4%;
-        --foreground: 230 20% 97.5%;
-        --border: 230 5% 10%;
-    }
-    @font-face {
-        font-family: 'HelveticaNow';
-        font-style: normal;
-        font-weight: 200 800;
-        src: url('./fonts/HelveticaNow.woff2') format('woff2');
-    }
-    @font-face {
-        font-family: 'Jetbrains';
-        font-style: normal;
-        font-weight: 200 800;
-        src: url('./fonts/Jetbrains.woff2') format('woff2');
-    }
+  :root {
+    --background: 230 20% 4%;
+    --foreground: 230 20% 97.5%;
+    --border: 230 5% 10%;
+
+    --code-keyword: 350 92% 72%;
+    --code-string: 150 42% 73%;
+    --code-var: 215 100% 75%;
+    --code-comment: 220 10% 45%;
+    --code-background: 225 20% 8%;
+    --code-gutter: 220 7% 47%;
+    --code-operator: 225 15% 60%;
+    --code-property: 267 88% 84%;
+  }
+
+  @font-face {
+    font-family: 'HelveticaNow';
+    font-style: normal;
+    font-weight: 200 800;
+    src: url('./fonts/HelveticaNow.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Jetbrains';
+    font-style: normal;
+    font-weight: 200 800;
+    src: url('./fonts/Jetbrains.woff2') format('woff2');
+  }
 }
+
 @tailwind components;
 @tailwind utilities;
 

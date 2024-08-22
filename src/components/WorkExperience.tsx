@@ -1,19 +1,31 @@
-export function WorkExperience() {
+interface WorkExperienceProps {
+  title: string
+  time: string
+  position: string
+  description: string
+  list: string[]
+}
+export function WorkExperience({ title, time, position, description, list }: WorkExperienceProps) {
   return (
-    <div>
+    <div className="mb-4">
       <div>
         <div className="v-between">
-          <p>Reachin</p>
-          <p>2023 - Present</p>
+          <p className="text-base">{ title }</p>
+          <p className="text-base">{ time }</p>
         </div>
-        <p className="text-blue-300 text-sm">Full-stack Developer</p>
+        <p className="text-blue-300 text-[14.5px]">{ position }</p>
       </div>
       <div>
-        <p>I led the development of a cross-platform mobile application for iOS and Android utilizing the Ionic Framework. Additionally, I created a web-based application designed to streamline business and customer-centric operations.</p>
-        <ul>
-          <li>Developed a hybrid mobile application for iOS and Android that communicates with an API backend.</li>
-          <li>Engaged with diverse external APIs, including Stripe for secure payments, AWS for storage solutions, and Onyx for streamlined data collection processes.</li>
-        </ul>
+        <p className="text-[15px]">
+          { description }
+        </p>
+        {/*        <ul>
+          { list.map((item, index) => {
+            return (
+              <li key={index}>{ item }</li>
+            )
+          })}
+        </ul> */}
       </div>
     </div>
   )

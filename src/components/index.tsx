@@ -1,5 +1,7 @@
 export { Button } from './Button'
+export { Code, CodeLine } from './Code'
 export { Donut } from './Donut'
 export { Footer } from './Footer'
 export { Heading } from './Heading'
 export { Navbar } from './Navbar'
+export { WorkExperience } from './WorkExperience'

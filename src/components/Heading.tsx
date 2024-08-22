@@ -2,8 +2,8 @@ import { IHeading } from '@/lib/types'
 
 export function Heading({ children }: IHeading) {
   return (
-    <div className="px-6 py-12 border-b">
-      <h2 className="font-code text-lg">{ children }</h2>
+    <div className="border-b px-6 py-9 md:px-7 md:py-10 lg:px-8 lg:py-12">
+      <h2 className="font-code font-[550] text-[22px] md:text-[24px]">{ children }</h2>
     </div>
   )
 }
