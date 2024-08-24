@@ -1,9 +1,12 @@
 import { RxGithubLogo } from 'react-icons/rx'
 import { RxLinkedinLogo } from 'react-icons/rx'
 import { PiInstagramLogoFill } from 'react-icons/pi'
-import { ISocialButton } from '@/lib/types'
+import { ReactNode } from 'react'
 
-const SocialButton = ({ link, children }: ISocialButton) => {
+const SocialButton = ({ link, children }: {
+  link: string
+  children: ReactNode
+}) => {
   return (
     <a href={link} target="_blank" className="px-6 v-center opacity-60 v-click hover:opacity-90">
       { children }

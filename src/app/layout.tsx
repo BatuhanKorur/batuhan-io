@@ -17,7 +17,7 @@ const container = cva({
   base: [
     'grow size-full flex flex-col relative',
     'border rounded bg-background shadow-sm',
-    'lg:max-w-screen-xl lg:mx-auto',
+    'lg:max-w-[1140px] lg:mx-auto',
   ],
 })
 

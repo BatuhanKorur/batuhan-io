@@ -1,3 +1,4 @@
+import animate from 'tailwindcss-animate'
 import plugin from 'tailwindcss/plugin'
 import type { Config } from 'tailwindcss'
 
@@ -31,6 +32,7 @@ const config: Config = {
         },
         card: {
           DEFAULT: 'hsl(var(--card))',
+          border: 'hsl(var(--card-border))',
         },
         code: {
           keyword: 'hsl(var(--code-keyword))',
@@ -46,6 +48,7 @@ const config: Config = {
     },
   },
   plugins: [
+    animate,
     plugin(function ({ addUtilities }) {
       addUtilities({
         '.v-align': {

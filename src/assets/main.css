@@ -4,6 +4,9 @@
     --background: 230 20% 4%;
     --foreground: 230 20% 97.5%;
     --border: 230 5% 10%;
+    --card: 230 15% 8%;
+    --card-border: 230 15% 15%;
+
 
     --code-keyword: 350 92% 72%;
     --code-string: 150 42% 73%;
